@@ -1,3 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+
+/* Sticky footer */
+html, body {
+    height: 100%;
+}
+
 body {
-    color: red;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+#footer {
+    flex-shrink: 0;
+}
+
+
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    color: #333;
+    display: flex;
+    flex-flow: column;
+}
+
+/* Header styles */
+#header {
+    border-bottom: 1px solid #ccc8c8
+}
+
+#header #logo {
+    display: inline-block;
+    padding: 15px 0;
+    width: 40px;
+    transform: translateX(-50%);
+}
+
+#header #logo img {
+    width: 100%;
+    height: auto
+}
+
+.custom-item {
+    flex: 1 0 50%;
+}
+
+.shop-basket-btn {
+    font-family: "Ubuntu", sans-serif;
+    display: inline-flex;
+    align-items: center;
+    background: #017aff;
+    color: #ffffff;
+    padding: 10px;
+    margin-left: 17px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border: 1px solid transparent;
+    -webkit-transition: 0.15s ease;
+    -moz-transition: 0.15s ease;
+    -o-transition: 0.15s ease;
+    -ms-transition: 0.15s ease;
+    transition: 0.15s ease;
+}
+
+.shop-basket-btn:hover {
+    background: #ffffff;
+    color: #017aff;
+    border: 1px solid #017aff;
+}
+
+.shop-basket-btn i {
+    display: inline;
+    margin-right: 6px;
+    font-size: 0.85rem;
+}
+
+.shop-basket-btn span {
+    text-transform: uppercase;
+}
+
+/* content styles */
+#content-area {
+    padding: 2rem 0;
+}
+
+#product-name {
+    padding-top: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.product-number {
+    text-align: center;
+    padding-top: 0.75rem;
+    text-align: center;
+    font-size: 1.25rem;
+    color: grey;
+    font-weight: 600;
+}
+
+
+.info-container .subtitle {
+    text-align: center;
+    font-size: 1.25rem;
+    padding-top: .85rem;
+}
+
+.info-container .subtitle span {
+    color: grey;
+}
+
+.color-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 65%;
+    margin: 1rem auto;
+}
+
+.color-list .color {
+    border: 1px solid grey;
+    padding: 0.5rem;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 9px;
+    -webkit-transition: 0.15s ease;
+    -moz-transition: 0.15s ease;
+    -o-transition: 0.15s ease;
+    -ms-transition: 0.15s ease;
+    transition: 0.15s ease;
+}
+
+.color-list .color:hover {
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 12px grey;
+}
+
+/* Footer styles */
+#footer {
+    padding: 0.75rem;
+    border-top: 1px solid #ccc8c8
+}
+
+.footer-nav .separator {
+    color: #007bff;
+}
+
+
+/* Custom modal styles */
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+#count {
+    font-weight: 700;
+}
+
+/* Media queries */
+
+@media (max-width: 575.98px) {
+    html {
+        font-size: 90%;
+    }
+
+    #header #logo {
+        padding: 12px 0;
+        width: 30px;
+
+    }
+
+    .footer-nav {
+        flex-flow: column;
+    }
+
+    .footer-nav .separator {
+        display: none;
+    }
 }

@@ -1,4 +1,18 @@
 {
-    "title": "Products details page",
-    "name": "Vasil Kotsev"
+  "_id": "1214435232987",
+  "product_name": "Love bag BELL SIMPLY",
+  "in_stock": "Yes",
+  "color_variations": [
+    {
+      "color": "gold"
+    },
+    {
+      "color": "white"
+    },
+    {
+      "color": "pink"
+    }
+  ],
+  "product_price": 150,
+  "available_in_stock": "available"
 }
