@@ -12,6 +12,10 @@ app.get("/product", (req, res) => {
   res.render("product-details", productData);
 });
 
+app.get("/product/:id", (req, res) => {
+  res.send(productData);
+});
+
 app.listen(3000, () => {
   console.log("Server is up on 3000");
 });

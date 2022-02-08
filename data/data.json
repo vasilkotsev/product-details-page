@@ -1,18 +1,55 @@
 {
-  "_id": "1214435232987",
-  "product_name": "Love bag BELL SIMPLY",
-  "in_stock": "Yes",
-  "color_variations": [
+  "master_product": {
+    "_id": 1214435232987,
+    "product_name": "Love bag BELL SIMPLY",
+    "product_color_variations": [
+      {
+        "color": "gold",
+        "_id": 12323232
+      },
+      {
+        "color": "white",
+        "_id": 23423422
+      },
+      {
+        "color": "pink",
+        "_id": 33436554
+      }
+    ]
+  },
+  "variation_products": [
     {
-      "color": "gold"
+      "_id": 12323232,
+      "product_color": "gold",
+      "available_in_stock": "available",
+      "product_price": 150,
+      "img": [
+        "assets/img/gold-bag-1.jpg",
+        "assets/img/gold-bag-2.jpg",
+        "assets/img/gold-bag-3.jpg"
+      ]
     },
     {
-      "color": "white"
+      "_id": 23423422,
+      "product_color": "white",
+      "available_in_stock": "low stock",
+      "product_price": 120,
+      "img": [
+        "assets/img/white-bag-1.jpg",
+        "assets/img/white-bag-2.jpg",
+        "assets/img/white-bag-3.jpg"
+      ]
     },
     {
-      "color": "pink"
+      "_id": 33436554,
+      "product_color": "pink",
+      "available_in_stock": "not available",
+      "product_price": 100,
+      "img": [
+        "assets/img/pink-bag-1.jpg",
+        "assets/img/pink-bag-2.jpg",
+        "assets/img/pink-bag-3.jpg"
+      ]
     }
-  ],
-  "product_price": 150,
-  "available_in_stock": "available"
+  ]
 }

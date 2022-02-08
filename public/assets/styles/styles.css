@@ -123,7 +123,7 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 65%;
+    width: 70%;
     margin: 1rem auto;
 }
 
@@ -133,6 +133,7 @@ body {
     cursor: pointer;
     margin-top: 10px;
     text-align: center;
+    text-transform: capitalize;
     border-radius: 9px;
     -webkit-transition: 0.15s ease;
     -moz-transition: 0.15s ease;
@@ -145,6 +146,20 @@ body {
     border: 1px solid transparent;
     box-shadow: 0px 0px 12px grey;
 }
+
+.product-info {
+    text-align: center;
+}
+
+.product-info p {
+    font-size: 1.15rem;
+}
+
+.product-info p span {
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
 
 /* Footer styles */
 #footer {

@@ -23,7 +23,7 @@
                 <li class="nav-item custom-item">
                     <a href="#" id="basket" class="shop-basket-link-checkout shop-basket-btn"><i
                             class="fas fa-shopping-basket"></i><span class="shop-basket-text">Basket</span>(<span
-                            id="product-count">{{clickcount}}</span>)
+                            id="product-count">0</span>)
                     </a>
                 </li>
                 <li class="nav-item custom-item">
@@ -38,32 +38,32 @@
     <main id="main" class="content">
         <section id="content-area">
             <div class="container">
-                <h1 id="product-name">{{product_name}}</h1>
+                <h1 id="product-name">{{master_product.product_name}}</h1>
                 <p class="product-number">{{_id}}</p>
                 <div class="row">
-                    <div class="col-md-4 my-auto">
-                        <div class="info-container">
+                    <div class="col-md-4">
+                        <div class="mt-5 info-container">
                             <h2 class="subtitle">Pick a color: </h2>
                             <ul class="color-list">
-                                {{#each color_variations}}
-                                <li style="background:{{this.color}}" class="color">{{this.color}}</li>
+                                {{#each master_product.product_color_variations}}
+                                <li id="{{this._id}}" style="background:{{this.color}}" class="color">{{this.color}}</li>
                                 {{/each}}
                             </ul>
-                            <h2 class="subtitle">Price: <span>{{product_price}}</span>$</h2>
-                            <h2 class="subtitle">In stock information: <span>{{available_in_stock}}</span></h2>
+                            <div class="product-info"></div>
                         </div>
                     </div>
                     <div class="col-md-8">
+                        <!-- image carousel -->
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" src="assets/img/picture-1.jpg" alt="First slide">
+                                    <img class="d-block w-100 pic-1" src="assets/img/picture-1.jpg" alt="First slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="assets/img/picture-2.jpg" alt="Second slide">
+                                    <img class="d-block w-100 pic-2" src="assets/img/picture-2.jpg" alt="Second slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="assets/img/picture-3.jpg" alt="Third slide">
+                                    <img class="d-block w-100 pic-3" src="assets/img/picture-3.jpg" alt="Third slide">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
@@ -85,7 +85,7 @@
     <footer id="footer">
         <div class="container">
             <nav class="nav footer-nav justify-content-center align-items-center">
-                <a class="nav-link active" href="#product-name">{{product_name}}</a><span class="separator">|</span>
+                <a class="nav-link active" href="#product-name">{{master_product.product_name}}</a><span class="separator">|</span>
                 <a class="nav-link" href="#exampleModalCenter" id="modal-opener">Add to Cart</a><span class="separator">|</span>
                 <a class="nav-link" href="#carouselExampleControls">Images</a>
             </nav>
@@ -105,7 +105,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <h4 class="modal-text"><span id="count"></span> products "{{product_name}}"</span> has been added to
+                    <h4 class="modal-text"><span id="count"></span> products "{{master_product.product_name}}"</span> has been added to
                         your cart</h4>
                 </div>
                 <div class="modal-footer">
